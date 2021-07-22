@@ -12,11 +12,12 @@ jobs:
   hello-world:
     name: Un job para saludar
     runs-on: ubuntu-latest    
-    - name: 'Step Hola Mundo'
-      id: hello
-      uses: alejandrofca/hello-world-docker-action@v1
-      with:
-        who-to-greet: "Alets"
-    - name: Usar el output
-      run: echo "La fecha fue ${{ steps.hello.outputs.time }}"
+    steps:
+      - name: 'Step Hola Mundo'
+        id: hello
+        uses: alejandrofca/hello-world-docker-action@v1
+        with:
+          who-to-greet: "Alets"
+      - name: Usar el output
+        run: echo "La fecha fue ${{ steps.hello.outputs.time }}"
     
