@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: 'Step Hola Mundo!'
         id: hello
-        uses: alejandrofca/hello-world-docker-action@v1
+        uses: alejandrofca/hello-world-docker-action@v2
         with:
           who-to-greet: "Alets"
       - name: Usar el output
