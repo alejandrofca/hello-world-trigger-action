@@ -12,7 +12,7 @@ jobs:
   hello-world:
     name: Un job para saludar
     runs-on: ubuntu-latest    
-      - name: Step Hola Mundo
+      - name: 'Step Hola Mundo'
         id: hello
         uses: alejandrofca/hello-world-docker-action@v1
         with:
